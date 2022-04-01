@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --header-bg: #f4f7f6;
+
+  --text-color-before: #f4f7f6;
+  --text-color-after: #000;
+}
+
+header {
+  background-color: transparent;
+  padding: 20px 50px 20px 50px;
+
+  transition: all 1s ease-in-out;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav.left {
+  display: flex;
+  align-items: center;
+
+  column-gap: 10px;
+}
+
+header nav .nav.left img {
+  width: 55px;
+}
+
+.store-name {
+  display: flex;
+  padding: 0px;
+  column-gap: 5px;
+  color: var(--text-color-before);
+}
+
+.store-name h4 {
+  margin: 0px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+}
+
+.store-name p {
+  margin: 0px;
+  font-family: 'Syne', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+header nav .nav {
+  display: flex;
+}
+
+header nav .nav.right {
+  column-gap: 80px;
+}
+
+header nav .nav.right button {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  background: none;
+  font-family: sans-serif;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+}
+
+.solid {
+  background-color: var(--header-bg);
+  -webkit-box-shadow: 1px 4px 15px -6px rgba(0, 0, 0, 0.93);
+  box-shadow: 1px 4px 15px -6px rgba(0, 0, 0, 0.93);
+  transition: all 1s ease-in;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.light {
+  color: var(--text-color-after);
+}
+
+.dark {
+  color: var(--text-color-before);
+}
+
+.dark-border {
+  padding-right: 5px;
+  border-right: 2px solid var(--text-color-after);
+}
+
+.light-border {
+  padding-right: 5px;
+  border-right: 2px solid var(--text-color-before);
+}

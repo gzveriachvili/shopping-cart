@@ -1,0 +1,14 @@
+:root {
+  --main-bg-1: #202121;
+  --bg-track: #202121;
+  --bg-thumb: rgb(128, 128, 128);
+  --bg-thumb-hover: rgb(199, 199, 199);
+}
+
+body {
+  background-color: var(--main-bg-1);
+}
+
+.content {
+  padding-bottom: 2000px;
+}

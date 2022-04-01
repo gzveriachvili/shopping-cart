@@ -3,3 +3,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--bg-thumb-hover);
+}
