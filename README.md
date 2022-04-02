@@ -21,3 +21,4 @@ npm start
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [React Icons](https://www.npmjs.com/package/react-icons)
 - [React Bootstrap](https://www.npmjs.com/package/react-icons)
+- [Framer Motion](https://www.framer.com/docs/introduction/)

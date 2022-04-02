@@ -85,7 +85,7 @@ header nav .nav.right button {
   background-color: var(--header-bg);
   -webkit-box-shadow: 1px 4px 15px -6px rgba(0, 0, 0, 0.93);
   box-shadow: 1px 4px 15px -6px rgba(0, 0, 0, 0.93);
-  transition: all 1s ease-in;
+  transition: all 1s ease-in-out;
 }
 
 .sticky {
