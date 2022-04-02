@@ -1,0 +1,31 @@
+.search-modal-out {
+  background-color: rgba(0, 0, 0, 0.438);
+}
+
+.modal-header {
+  border: none !important;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-input svg {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.search-input input {
+  width: 100%;
+  height: 40px;
+
+  border: none;
+  border-bottom: 3px solid #0069ed;
+}
+
+.search-input input:focus {
+  border-bottom: 3.5px solid #0069ed;
+  outline-width: 0;
+}

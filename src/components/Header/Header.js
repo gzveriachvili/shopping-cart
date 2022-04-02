@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './styles/style.css';
 import logoDark from './assets/img/logo_dark.svg';
 import logoLight from './assets/img/logo_light.svg';
-import { AiOutlineSearch, AiOutlineShoppingCart } from 'react-icons/ai';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 import Search from './utils/Search';
 
 const Header = () => {
@@ -68,9 +68,8 @@ const Header = () => {
               <button className='dark text-btn'>Shop</button>
             </Link>
 
-            <Search />
             <button className='dark'>
-              <AiOutlineSearch />
+              <Search />
             </button>
             <div className='cart'>
               <div className='circle'>{count}</div>
