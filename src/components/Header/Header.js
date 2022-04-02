@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './styles/style.css';
 import logoDark from './assets/img/logo_dark.svg';
 import logoLight from './assets/img/logo_light.svg';
@@ -6,6 +7,7 @@ import { AiOutlineSearch, AiOutlineShoppingCart } from 'react-icons/ai';
 
 const Header = () => {
   const [imgIndex, setImgIndex] = useState(0);
+  const [count, setCount] = useState(0);
 
   const logoArr = [logoDark, logoLight];
 
@@ -14,7 +16,6 @@ const Header = () => {
       const header = document.querySelector('header');
       const left = document.querySelector('.store-name');
       const title = document.querySelector('.title');
-
       const right = document.querySelectorAll('.nav.right button');
 
       if (window.scrollY > 0) {
@@ -51,7 +52,10 @@ const Header = () => {
       <header className='sticky'>
         <nav>
           <div className='nav left'>
-            <img id='logo' src={logoArr[imgIndex]} alt='Top navbar logo' />
+            <Link to='/'>
+              <img id='logo' src={logoArr[imgIndex]} alt='Top navbar logo' />
+            </Link>
+
             <div className='store-name'>
               <h4 className='title light-border'>Kalibre</h4>
               <p>Watches</p>
@@ -59,14 +63,20 @@ const Header = () => {
           </div>
 
           <div className='nav right '>
-            <button className='dark'>Shop</button>
+            <Link to='/Shop'>
+              <button className='dark text-btn'>Shop</button>
+            </Link>
+
             <button className='dark'>
               <AiOutlineSearch />
             </button>
-            <button className='dark'>
-              {' '}
-              <AiOutlineShoppingCart />
-            </button>
+            <div className='cart'>
+              <div className='circle'>{count}</div>
+              <button className='dark'>
+                {' '}
+                <AiOutlineShoppingCart />
+              </button>
+            </div>
           </div>
         </nav>
       </header>

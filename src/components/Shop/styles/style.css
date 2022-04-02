@@ -9,6 +9,14 @@ body {
   background-color: var(--main-bg-1);
 }
 
+h1 {
+  color: #fff;
+
+  position: absolute;
+
+  transform: translate(150%, 550%);
+}
+
 .content {
-  padding-bottom: 2000px;
+  padding-bottom: 1000px;
 }
