@@ -59,7 +59,7 @@ video {
 }
 
 .welcome-area h3 {
-  color: var(--accent-color);
+  color: var(--text-color-before);
   text-transform: capitalize;
   font-family: 'Krona One', sans-serif;
 
@@ -95,18 +95,18 @@ video {
   font-weight: 600;
   text-transform: uppercase;
   background-color: transparent;
-  border-radius: 8px;
-  color: var(--accent-color);
-  font-family: sans-serif;
   font-size: 1.1rem;
   line-height: 1;
   cursor: pointer;
   text-align: center;
 
-  transition: all 0.4s ease-in-out;
+  border-radius: 100px;
+  color: var(--text-color-before);
+  text-shadow: 0 0 10px var(--text-color-before);
+
+  transition: all 0.3s ease-in-out;
 }
 
 .text-and-button button:hover {
-  background-color: var(--accent-color);
-  color: var(--text-color-before);
+  border-color: var(--text-color-before);
 }
