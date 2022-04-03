@@ -24,17 +24,6 @@
   position: relative;
 }
 
-.decor-tri {
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background-color: #bc302f;
-  width: 30px;
-  height: 30px;
-
-  position: absolute;
-  left: 470px;
-  top: 3px;
-}
-
 .products-title-section h2 {
   font-family: 'Krona One', sans-serif;
   width: fit-content;
@@ -43,7 +32,7 @@
 }
 
 .products-title-section button {
-  margin-top: 5px;
+  margin-top: 15px;
   display: inline-block;
   width: fit-content;
   border: none;

@@ -6,6 +6,7 @@ import './styles/style.css';
 import AnimatedPage from '../../AnimatedPage';
 import CookieConsent from 'react-cookie-consent';
 import ProductDisplay from './utils/ProductDisplay';
+import { SaleItems } from './utils/SaleItems';
 
 const Home = () => {
   return (
@@ -31,7 +32,6 @@ const Home = () => {
               <source src={backgroundVideo} type='video/mp4' />
             </video>
           </div>
-
           <div className='welcome-area'>
             <h3>Welcome to our store</h3>
             <div className='text-and-button'>
@@ -48,9 +48,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-
         <div>
           <ProductDisplay title='Featured categories' />
+        </div>
+        <div>
+          <SaleItems title='Items on sale' />
         </div>
       </div>
     </AnimatedPage>

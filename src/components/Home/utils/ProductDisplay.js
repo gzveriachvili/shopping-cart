@@ -21,8 +21,6 @@ const ProductDisplay = (props) => {
         <Link to='/Shop'>
           <button>Shop all products</button>
         </Link>
-
-        <div className='decor-tri'></div>
       </div>
       <div className='wrapper'>
         <div className='category-item one'>
