@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import './styles/style.css';
 import logoDark from './assets/img/logo_dark.svg';
 import logoLight from './assets/img/logo_light.svg';
+import logoColored from './assets/img/logo_colored.svg';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import Search from './utils/Search';
 
 const Header = () => {
-  const [imgIndex, setImgIndex] = useState(0);
   const [count, setCount] = useState(0);
 
-  const logoArr = [logoDark, logoLight];
+  const logoArr = [logoDark, logoLight, logoColored];
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -30,8 +30,6 @@ const Header = () => {
           button.classList.remove('dark');
           button.classList.add('light');
         });
-
-        setImgIndex(1);
       } else {
         header.classList.remove('solid');
         left.classList.remove('light');
@@ -43,7 +41,6 @@ const Header = () => {
           button.classList.add('dark');
           button.classList.remove('light');
         });
-        setImgIndex(0);
       }
     });
   }, []);
@@ -54,7 +51,7 @@ const Header = () => {
         <nav>
           <div className='nav left'>
             <Link to='/'>
-              <img id='logo' src={logoArr[imgIndex]} alt='Top navbar logo' />
+              <img id='logo' src={logoArr[2]} alt='Top navbar logo' />
             </Link>
 
             <div className='store-name'>

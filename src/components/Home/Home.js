@@ -4,10 +4,25 @@ import Header from '../Header/Header';
 import backgroundVideo from './assets/img/home_bg.mp4';
 import './styles/style.css';
 import AnimatedPage from '../../AnimatedPage';
+import CookieConsent from 'react-cookie-consent';
+import ProductDisplay from './utils/ProductDisplay';
 
 const Home = () => {
   return (
     <AnimatedPage>
+      <CookieConsent
+        location='bottom'
+        buttonText='Accept'
+        cookieName='myFirstReactCookie'
+        style={{ background: '#0069ed' }}
+        buttonStyle={{ color: '#000', fontSize: '1rem' }}
+        expires={150}
+      >
+        This website doesn't uses cookies to enhance the user experience.{' '}
+        <span style={{ fontSize: '10px' }}>
+          This banner is only here to practice.
+        </span>
+      </CookieConsent>
       <div className='home'>
         <Header />
         <div className='landing-section'>
@@ -34,7 +49,9 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='featured'></div>
+        <div>
+          <ProductDisplay title='Featured categories' />
+        </div>
       </div>
     </AnimatedPage>
   );
