@@ -8,7 +8,7 @@
 .sale {
   background-color: var(--sale-bg);
 
-  padding: 20px 40px 20px 40px;
+  padding: 20px 40px 40px 40px;
   width: 100%;
   display: flex;
   flex-direction: column;

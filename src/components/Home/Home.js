@@ -7,6 +7,7 @@ import AnimatedPage from '../../AnimatedPage';
 import CookieConsent from 'react-cookie-consent';
 import ProductDisplay from './utils/ProductDisplay';
 import { SaleItems } from './utils/SaleItems';
+import { Footer } from '../Footer/Footer';
 
 const Home = () => {
   return (
@@ -54,6 +55,7 @@ const Home = () => {
         <div>
           <SaleItems title='Items on sale' />
         </div>
+        <Footer />
       </div>
     </AnimatedPage>
   );

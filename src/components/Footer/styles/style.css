@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 5px;
+  height: 60px;
+  background-color: #f4f7f6;
+}
+
+.footer h6 {
+  color: #161616;
+}
+
+.footer svg {
+  color: #0069ed;
+  font-size: 1.3rem;
+  vertical-align: middle;
+  margin-bottom: 6px;
+  transition: all 0.4s ease-in-out;
+}
+
+.footer svg:hover {
+  transform: scale(1.2) rotate(360deg);
+  color: #0050b2;
+}
