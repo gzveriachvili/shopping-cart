@@ -3,8 +3,8 @@ import './saleCards.css';
 
 export const SaleWatchCard = (props) => {
   return (
-    <div className='item'>
-      <img src={props.imgName} alt='' />
+    <div className='item noselect'>
+      <img draggable='false' src={props.imgName} alt='' />
       <div className='sale-card'>
         <Link to='/Shop'>
           <h5 className='sale-title'>{props.watchName}</h5>

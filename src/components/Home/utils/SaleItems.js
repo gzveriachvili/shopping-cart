@@ -45,7 +45,7 @@ export const SaleItems = (props) => {
       </div>
 
       <div className='carousel'>
-        <Carousel responsive={responsive}>
+        <Carousel responsive={responsive} swipeable={true} draggable={true}>
           <SaleWatchCard
             imgName={gentleman}
             watchName='Tissot Gentleman'
