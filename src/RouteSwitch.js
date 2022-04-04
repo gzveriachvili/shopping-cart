@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './styles/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Shop from './components/Shop/Shop';
 import { AnimatePresence } from 'framer-motion';

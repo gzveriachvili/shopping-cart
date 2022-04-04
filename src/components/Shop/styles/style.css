@@ -3,20 +3,113 @@
   --bg-track: #202121;
   --bg-thumb: rgb(128, 128, 128);
   --bg-thumb-hover: rgb(199, 199, 199);
+  --panel-bg: #f4f7f6;
+  --text-color: #171717;
 }
 
 body {
   background-color: var(--main-bg-1);
 }
 
-h1 {
-  color: #fff;
-
-  position: absolute;
-
-  transform: translate(150%, 550%);
+.padding {
+  padding-bottom: 1000px;
 }
 
-.content {
-  padding-bottom: 1000px;
+.shop-wrapper {
+  margin-top: 5%;
+  position: absolute;
+  width: 100%;
+  background-color: var(--panel-bg);
+
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: repeat(2, auto);
+
+  padding: 30px 15px 30px 15px;
+}
+
+.shop-top-section {
+  grid-column-start: 1;
+  grid-column-end: 11;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  color: #393838;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-top-nav {
+  display: flex;
+}
+
+.shop-top-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.shop-top-nav h4:last-child {
+  margin-left: 150px;
+}
+
+.form-check-label {
+  color: var(--text-color);
+}
+
+.gender-checkbox {
+  margin-bottom: 10px;
+}
+
+.shop-side {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.price-form .form-check {
+  margin-bottom: 15px;
+}
+
+.accordion-item button {
+  background-color: var(--panel-bg);
+  border-top: 1px solid #cdcdcd;
+}
+
+.accordion-item button:last-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.acc-categories {
+  max-width: fit-content;
+  min-width: 100%;
+}
+
+.shop-main {
+  grid-column-start: 2;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  row-gap: 50px;
+}
+
+.title-sort {
+  display: flex;
+  margin-left: 200px;
+
+  width: 68%;
+  justify-content: space-between;
+}
+
+.item-test {
+  background-color: #393838;
+  border: 2px solid red;
+  width: 250px;
+  height: 300px;
 }

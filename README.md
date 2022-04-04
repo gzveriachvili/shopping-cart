@@ -23,7 +23,7 @@ npm start
 - [React Bootstrap](https://www.npmjs.com/package/react-icons)
 - [Framer Motion](https://www.framer.com/docs/introduction/)
 
-### The product images are the property of:
+#### The product photos are the property of:
 
 - [Jomashop](https://www.jomashop.com/)
 - [Torneau](https://www.tourneau.com/)

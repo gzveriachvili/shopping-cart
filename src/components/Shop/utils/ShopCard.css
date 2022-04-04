@@ -1,0 +1,56 @@
+.shop-card {
+  background-color: #fff;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.32);
+}
+
+.card-zoom {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.card-zoom:hover img {
+  transform: scale(2) rotate(25deg);
+}
+
+.shop-card img {
+  width: 250px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+.shop-card-title-price {
+  padding-top: 5px;
+}
+
+.shop-card-title-price h6 {
+  font-size: 1.1rem;
+
+  cursor: pointer;
+}
+
+.shop-card-title-price p {
+  font-weight: bold;
+}
+
+.shop-card-button button {
+  outline: none;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  padding: 2px 6px;
+  text-align: center;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
