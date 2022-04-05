@@ -103,17 +103,12 @@ const Shop = () => {
                       name='price'
                       label='$500 - $1000'
                     />
-                    <Form.Check
-                      type='radio'
-                      id='price5'
-                      name='price'
-                      label='$1000 - $5000'
-                    />
+
                     <Form.Check
                       type='radio'
                       id='price6'
                       name='price'
-                      label='$5000+'
+                      label='$1000+'
                     />
                   </Form>
                 </Accordion.Body>

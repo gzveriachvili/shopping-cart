@@ -12,7 +12,13 @@ export const ShopCard = (props) => {
         <p>${props.cardPrice}</p>
       </div>
       <div className='shop-card-button'>
-        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        <motion.button
+          onClick={(e) => {
+            console.log(props.cardTitle);
+          }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
           Add to cart
         </motion.button>
       </div>

@@ -6,11 +6,17 @@ import logoLight from './assets/img/logo_light.svg';
 import logoColored from './assets/img/logo_colored.svg';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import Search from './utils/Search';
+import { Cart } from './utils/Cart';
 
 const Header = () => {
   const [count, setCount] = useState(0);
+  const [cart, setCart] = useState([]);
 
   const logoArr = [logoDark, logoLight, logoColored];
+
+  const openNav = () => {
+    document.getElementById('mySidebar').style.width = '100vw';
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -45,8 +51,22 @@ const Header = () => {
     });
   }, []);
 
+  useEffect(() => {
+    const leftCart = document.querySelector('.left-cart');
+    const closeCart = document.querySelector('#close-cart');
+
+    leftCart.addEventListener('click', () => {
+      document.getElementById('mySidebar').style.width = '0';
+    });
+
+    closeCart.addEventListener('click', () => {
+      document.getElementById('mySidebar').style.width = '0';
+    });
+  });
+
   return (
     <div>
+      <Cart productName={cart} />
       <header className='sticky'>
         <nav>
           <div className='nav left'>
@@ -70,7 +90,7 @@ const Header = () => {
             </button>
             <div className='cart'>
               <div className='circle'>{count}</div>
-              <button className='dark'>
+              <button id='open' className='dark' onClick={openNav}>
                 {' '}
                 <AiOutlineShoppingCart />
               </button>
