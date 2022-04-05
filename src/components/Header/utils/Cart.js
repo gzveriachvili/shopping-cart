@@ -2,7 +2,7 @@ import './cart.css';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 export const Cart = (props) => {
-  const { products, totalPrice, removeItem, addMore, prices } = props;
+  const { products, prices } = props;
   return (
     <div>
       <div id='mySidebar' class='sidebar'>

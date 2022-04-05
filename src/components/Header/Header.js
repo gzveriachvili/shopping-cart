@@ -13,7 +13,7 @@ const Header = () => {
   const [count, setCount] = useState(0);
 
   const [productArr, setProductArr] = useState([]);
-  const [total, setTotal] = useState(0);
+
   const [priceArr, setPriceArr] = useState([]);
 
   const logoArr = [logoDark, logoLight, logoColored];
@@ -95,7 +95,7 @@ const Header = () => {
 
   return (
     <div>
-      <Cart products={productArr} totalPrice={total} prices={priceArr} />
+      <Cart products={productArr} prices={priceArr} />
       <header className='sticky'>
         <nav>
           <div className='nav left'>
