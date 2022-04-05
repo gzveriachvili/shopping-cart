@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <footer>
       <div className='footer'>
-        <h6>Made by Gia Zveriachvili</h6>
+        <h6>Copyright © 2022 gzveriachvili</h6>
         <a href='https://github.com/' target='_blank' rel='noreferrer'>
           {' '}
           <VscGithub />

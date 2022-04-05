@@ -7,10 +7,14 @@ import logoColored from './assets/img/logo_colored.svg';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import Search from './utils/Search';
 import { Cart } from './utils/Cart';
+import uniqid from 'uniqid';
 
 const Header = () => {
   const [count, setCount] = useState(0);
-  const [cart, setCart] = useState([]);
+
+  const [productArr, setProductArr] = useState([]);
+  const [total, setTotal] = useState(0);
+  const [priceArr, setPriceArr] = useState([]);
 
   const logoArr = [logoDark, logoLight, logoColored];
 
@@ -49,6 +53,27 @@ const Header = () => {
         });
       }
     });
+
+    document.addEventListener('click', (e) => {
+      if (e.path[2].childNodes[2].textContent === 'Add to cart') {
+        let productName = e.path[2].childNodes[1].childNodes[0].textContent;
+        let productPrice = e.path[2].childNodes[1].childNodes[1].textContent;
+
+        let item = {
+          product: {
+            text: productName,
+            price: productPrice,
+            id: uniqid(),
+          },
+        };
+
+        let price1 = item.product.price;
+        let price2 = price1.substring(1);
+
+        setProductArr((productArr) => productArr.concat(item.product));
+        setPriceArr((priceArr) => priceArr.concat(price2));
+      }
+    });
   }, []);
 
   useEffect(() => {
@@ -64,9 +89,13 @@ const Header = () => {
     });
   });
 
+  useEffect(() => {
+    setCount(productArr.length);
+  }, [productArr]);
+
   return (
     <div>
-      <Cart productName={cart} />
+      <Cart products={productArr} totalPrice={total} prices={priceArr} />
       <header className='sticky'>
         <nav>
           <div className='nav left'>
@@ -88,6 +117,7 @@ const Header = () => {
             <button className='dark'>
               <Search />
             </button>
+
             <div className='cart'>
               <div className='circle'>{count}</div>
               <button id='open' className='dark' onClick={openNav}>

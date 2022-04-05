@@ -2,6 +2,7 @@ import './cart.css';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 export const Cart = (props) => {
+  const { products, totalPrice, removeItem, addMore, prices } = props;
   return (
     <div>
       <div id='mySidebar' class='sidebar'>
@@ -10,7 +11,34 @@ export const Cart = (props) => {
           <AiOutlineCloseCircle id='close-cart' />
           <div className='cart-content'>
             <h5>Your shopping cart</h5>
-            <p>{props.productName}</p>
+
+            <div>
+              <ul>
+                {products.map((task) => {
+                  return (
+                    <li key={task.id}>
+                      <div className='product-info'>
+                        <p>{task.text}</p>
+
+                        <div className='quantity-adjust'>
+                          <p>{task.price}</p>
+                        </div>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+              <div className='total-price'>
+                <p>
+                  Total price: $
+                  {prices.reduce(
+                    (previousValue, currentValue) =>
+                      parseInt(previousValue) + parseInt(currentValue),
+                    0
+                  )}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

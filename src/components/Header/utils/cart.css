@@ -54,4 +54,32 @@
   text-transform: capitalize;
 
   overflow: hidden;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-top: 5px;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-info p:first-child {
+  font-weight: bold;
+}
+
+.product-info p:last-child {
+  color: #fff;
+  background-color: black;
+  padding: 0px 4px;
+  border-radius: 6px;
+}
+
+.quantity-adjust {
+  display: flex;
+  column-gap: 10px;
 }
