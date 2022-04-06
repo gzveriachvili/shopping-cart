@@ -1,4 +1,5 @@
 import './cart.css';
+import { motion } from 'framer-motion';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 export const Cart = (props) => {
@@ -17,6 +18,8 @@ export const Cart = (props) => {
                 {products.map((task) => {
                   return (
                     <li key={task.id}>
+                      <p className='brand-dec'>{task.text.split(' ')[0]}</p>
+                      <img src={task.img} alt='' />
                       <div className='product-info'>
                         <p>{task.text}</p>
 
@@ -30,13 +33,21 @@ export const Cart = (props) => {
               </ul>
               <div className='total-price'>
                 <p>
-                  Total price: $
+                  <strong>Total price:</strong> $
                   {prices.reduce(
                     (previousValue, currentValue) =>
                       parseInt(previousValue) + parseInt(currentValue),
                     0
                   )}
                 </p>
+              </div>
+              <div className='checkout'>
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  Checkout
+                </motion.button>
               </div>
             </div>
           </div>

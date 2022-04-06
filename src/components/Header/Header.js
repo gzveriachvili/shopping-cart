@@ -58,12 +58,14 @@ const Header = () => {
       if (e.path[2].childNodes[2].textContent === 'Add to cart') {
         let productName = e.path[2].childNodes[1].childNodes[0].textContent;
         let productPrice = e.path[2].childNodes[1].childNodes[1].textContent;
+        let productImg = e.path[2].childNodes[1].getAttribute('data-index');
 
         let item = {
           product: {
             text: productName,
             price: productPrice,
             id: uniqid(),
+            img: productImg,
           },
         };
 
