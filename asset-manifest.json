@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.5fac8585.css",
+    "main.css": "/shopping-cart/static/css/main.d35e917c.css",
     "main.js": "/shopping-cart/static/js/main.8d7b92c9.js",
     "static/media/home_bg.mp4": "/shopping-cart/static/media/home_bg.a008c0795c578c8fb547.mp4",
     "static/media/khaki_aviation.jpg": "/shopping-cart/static/media/khaki_aviation.e4aadd2a2f1db865792d.jpg",
@@ -38,11 +38,11 @@
     "static/media/logo_dark.svg": "/shopping-cart/static/media/logo_dark.c692736556955cee580ccc0620310a8d.svg",
     "index.html": "/shopping-cart/index.html",
     "static/media/logo_light.svg": "/shopping-cart/static/media/logo_light.1d6656ba1ad9dcc8b4e6c718fb1d5416.svg",
-    "main.5fac8585.css.map": "/shopping-cart/static/css/main.5fac8585.css.map",
+    "main.d35e917c.css.map": "/shopping-cart/static/css/main.d35e917c.css.map",
     "main.8d7b92c9.js.map": "/shopping-cart/static/js/main.8d7b92c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fac8585.css",
+    "static/css/main.d35e917c.css",
     "static/js/main.8d7b92c9.js"
   ]
 }
