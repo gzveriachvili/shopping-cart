@@ -8,7 +8,7 @@ export const Cart = (props) => {
     <div>
       <div id='mySidebar' class='sidebar'>
         <div className='left-cart'></div>
-        <div className='right-cart'>
+        <div className='right-cart' id='rightCart'>
           <AiOutlineCloseCircle id='close-cart' />
           <div className='cart-content'>
             <h5>Your shopping cart</h5>
