@@ -72,8 +72,15 @@ const Header = () => {
         let price1 = item.product.price;
         let price2 = price1.substring(1);
 
+        let prices = {
+          price: {
+            amount: price2,
+            id: uniqid(),
+          },
+        };
+
         setProductArr((productArr) => productArr.concat(item.product));
-        setPriceArr((priceArr) => priceArr.concat(price2));
+        setPriceArr((priceArr) => priceArr.concat(prices.price.amount));
       }
     });
   }, []);
@@ -97,7 +104,12 @@ const Header = () => {
 
   return (
     <div>
-      <Cart products={productArr} prices={priceArr} />
+      <Cart
+        products={productArr}
+        prices={priceArr}
+        setProductArr={setProductArr}
+        setPriceArr={setPriceArr}
+      />
       <header className='sticky'>
         <nav>
           <div className='nav left'>

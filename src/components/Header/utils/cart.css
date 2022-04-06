@@ -9,7 +9,7 @@
   right: 0;
   overflow-x: hidden;
 
-  transition: 1s;
+  transition: 0.8s;
 
   display: flex;
 }
@@ -105,6 +105,8 @@ li {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+
+  position: relative;
 }
 
 .product-info p:first-child {
@@ -151,4 +153,24 @@ li {
   margin-bottom: 10px;
 
   border-radius: 100px;
+}
+
+.product-info button {
+  border: none;
+  outline: none;
+  color: #bc302f;
+
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
+
+  font-weight: bold;
+}
+
+.product-info button svg:hover {
+  color: #d21313;
+}
+
+.product-info button svg {
+  font-size: 1.5rem;
 }
