@@ -4,7 +4,7 @@ import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { AiFillDelete } from 'react-icons/ai';
 
 export const Cart = (props) => {
-  const { products, prices, deleteItem, setProductArr, setPriceArr } = props;
+  const { products, prices, setProductArr, setPriceArr } = props;
   return (
     <div>
       <div id='mySidebar' class='sidebar'>
