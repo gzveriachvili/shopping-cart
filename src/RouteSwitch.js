@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import './styles/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home/Home';
@@ -9,14 +9,14 @@ import ScrollToTop from './ScrollToTop';
 const RouteSwitch = () => {
   return (
     <AnimatePresence>
-      <BrowserRouter basename='/'>
+      <HashRouter basename='/'>
         <ScrollToTop>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/Shop' element={<Shop />} />
           </Routes>
         </ScrollToTop>
-      </BrowserRouter>
+      </HashRouter>
     </AnimatePresence>
   );
 };
