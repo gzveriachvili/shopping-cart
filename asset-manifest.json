@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.c0fb19b1.css",
-    "main.js": "/shopping-cart/static/js/main.90709e01.js",
+    "main.css": "/shopping-cart/static/css/main.ce2d377c.css",
+    "main.js": "/shopping-cart/static/js/main.d14e4d0c.js",
     "static/media/home_bg.mp4": "/shopping-cart/static/media/home_bg.a008c0795c578c8fb547.mp4",
     "static/media/khaki_aviation.jpg": "/shopping-cart/static/media/khaki_aviation.e4aadd2a2f1db865792d.jpg",
     "static/media/navitimer.jpg": "/shopping-cart/static/media/navitimer.88ed0b5fe42079e665d2.jpg",
@@ -38,11 +38,11 @@
     "static/media/logo_dark.svg": "/shopping-cart/static/media/logo_dark.c692736556955cee580ccc0620310a8d.svg",
     "index.html": "/shopping-cart/index.html",
     "static/media/logo_light.svg": "/shopping-cart/static/media/logo_light.1d6656ba1ad9dcc8b4e6c718fb1d5416.svg",
-    "main.c0fb19b1.css.map": "/shopping-cart/static/css/main.c0fb19b1.css.map",
-    "main.90709e01.js.map": "/shopping-cart/static/js/main.90709e01.js.map"
+    "main.ce2d377c.css.map": "/shopping-cart/static/css/main.ce2d377c.css.map",
+    "main.d14e4d0c.js.map": "/shopping-cart/static/js/main.d14e4d0c.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0fb19b1.css",
-    "static/js/main.90709e01.js"
+    "static/css/main.ce2d377c.css",
+    "static/js/main.d14e4d0c.js"
   ]
 }
