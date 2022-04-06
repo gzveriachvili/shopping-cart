@@ -15,16 +15,16 @@ export const Cart = (props) => {
 
             <div>
               <ul>
-                {products.map((task) => {
+                {products.map((product) => {
                   return (
-                    <li key={task.id}>
-                      <p className='brand-dec'>{task.text.split(' ')[0]}</p>
-                      <img src={task.img} alt='' />
+                    <li key={product.id}>
+                      <p className='brand-dec'>{product.text.split(' ')[0]}</p>
+                      <img src={product.img} alt='' />
                       <div className='product-info'>
-                        <p>{task.text}</p>
-
+                        <p>{product.text}</p>
+                        <button>X</button>
                         <div className='quantity-adjust'>
-                          <p>{task.price}</p>
+                          <p>{product.price}</p>
                         </div>
                       </div>
                     </li>

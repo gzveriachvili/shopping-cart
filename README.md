@@ -2,7 +2,7 @@
 
 A fictional online store featuring a fully functional shopping cart. This project was built by the use of functional components, Hooks and React Router.
 
-#### Home page
+#### Home page:
 
 ![Preview Image](./src/assets/img/preview.png)
 
