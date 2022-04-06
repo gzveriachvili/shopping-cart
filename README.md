@@ -1,8 +1,9 @@
 # Online store website made with React
 
-A fictional online store featuring a fully functional shopping cart. This project was built by the use of functional components, Hooks and React Router. The app was tested thoroughly before deployment using the React Testing Library.
+A fictional online store featuring a fully functional shopping cart. This project was built by the use of functional components, Hooks and React Router.
 
 ![Preview Image](./src/assets/img/preview.png)
+![Preview Image2](./src/assets/img/preview2.png)
 
 [Live Demo](https://gzveriachvili.github.io/shopping-cart/) 🖱️
 
