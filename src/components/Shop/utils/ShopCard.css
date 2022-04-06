@@ -21,13 +21,12 @@
 
 .shop-card img {
   width: 250px;
-  cursor: pointer;
   transition: transform 0.5s ease-in-out;
-
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
+  pointer-events: none;
 }
 
 .shop-card-title-price {
