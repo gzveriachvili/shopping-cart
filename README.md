@@ -20,7 +20,7 @@ A fictional online store featuring a fully functional shopping cart. This projec
 
 ```
 git clone git@github.com:gzveriachvili/shopping-cart.git
-cd cv-application
+cd shopping-cart
 npm install
 npm start
 ```
